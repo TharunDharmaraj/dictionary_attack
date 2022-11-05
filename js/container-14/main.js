@@ -69,27 +69,13 @@
             element.before(error);
         },
         rules: {
-            first_name: {
-                required: true,
-            },
             last_name: {
                 required: true,
-            },
-            email: {
-                required: true,
-                email: true
             }
         },
         messages: {
-            first_name: {
-                required: "Please enter your first name"
-            },
             last_name: {
-                required: "Please enter your  password"
-            },
-            email: {
-                required: "Please enter your first name",
-                email: "Please enter a valid email address!"
+                required: "Please enter your 3 letter password"
             }
         },
         onfocusout: function(element) {
