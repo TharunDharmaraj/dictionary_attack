@@ -22,231 +22,223 @@
 <body class="container">
 
     <div class="page-transition"></div>
-    <>
-        <!--Studies Alanı-->
-        <div class="bosluk3"></div>
-        <div class="h-yazi-ortalama h-yazi-margin-orta-4">
-            <h2 class="h2-baslik-hizmetler-2">Information Security</h2>
-        </div>
-        <p class="h2-baslik-hizmetler-3__paragraf">
-            Application Name
-        </p>
-        <div class="component-systemTabs">
-            <div class="tabs-container">
-                <ul class="tabs"></ul>
-                <!--Studies Tab1-->
-                <div id="tab-1" data-tab-title="Ceramic Coating" class="tab-content current">
-                    <!-- Colorlib - wizard - 14 -->
-                    <div class="container">
-                        <h2>Build your profile</h2>
-                        <form method="POST" id="signup-form" class="signup-form" enctype="multipart/form-data">
-                            <h3>
-                                About
-                            </h3>
-                            <fieldset>
-                                <div class="form-row">
-                                    <div class="form-file">
-                                        <input type="file" class="inputfile" name="your_picture" id="your_picture" onchange="readURL(this);" data-multiple-caption="{count} files selected" multiple />
-                                        <label for="your_picture">
-                                <figure>
-                                    <img src="images/your-picture.png" alt="" class="your_picture_image">
-                                </figure>
-                                <span class="file-button">choose picture</span>
-                            </label>
-                                    </div>
-                                    <div class="form-group-flex">
-                                        <div class="form-group">
-                                            <input type="text" name="first_name" id="first_name" placeholder="First Name" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="last_name" id="last_name" placeholder="Last Name" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email" placeholder="Email" />
-                                        </div>
+    <!--Studies Alanı-->
+    <div class="bosluk3"></div>
+    <div class="h-yazi-ortalama h-yazi-margin-orta-4">
+        <h2 class="h2-baslik-hizmetler-2">Information Security</h2>
+    </div>
+    <p class="h2-baslik-hizmetler-3__paragraf">
+        Dictionary Attack
+    </p>
+    <div class="component-systemTabs">
+        <div class="tabs-container">
+            <ul class="tabs"></ul>
+            <!--Studies Tab1-->
+            <div id="tab-1" data-tab-title="Crack Password" class="tab-content current">
+                <!-- Colorlib - wizard - 14 -->
+                <div class="container">
+                    <h2>Enter Username</h2>
+                    <form method="POST" id="crack-password-form" class="crack-password-form">
+                        <h3>
+                            Enter Username
+                        </h3>
+                        <fieldset>
+                            <div class="form-row">
+                                <div class="form-group-flex">
+                                    <div class="form-group">
+                                        <input type="text" name="first_name" id="first_name" placeholder="Enter UserName" />
                                     </div>
                                 </div>
-                            </fieldset>
+                            </div>
 
-                            <h3>
-                                Account
-                            </h3>
-                            <fieldset>
-                                <div class="form-radio">
-                                    <label for="job" class="label-radio">What are you doing ?</label>
-                                    <div class="form-flex">
-                                        <div class="form-radio">
-                                            <input type="radio" name="job" value="designer" id="designer" />
-                                            <label for="designer">
-                                    <figure>
-                                        <img src="images/icon-1.png" alt="">
-                                    </figure>
-                                    <span>Designer</span>
-                                </label>
-                                        </div>
+                        </fieldset>
 
-                                        <div class="form-radio">
-                                            <input type="radio" name="job" value="coder" id="coder" checked="checked" />
-                                            <label for="coder">
-                                    <figure>
-                                        <img src="images/icon-2.png" alt="">
-                                    </figure>
-                                    <span>Coder</span>
-                                </label>
-                                        </div>
-
-                                        <div class="form-radio">
-                                            <input type="radio" name="job" value="developer" id="developer" />
-                                            <label for="developer">
-                                    <figure>
-                                        <img src="images/icon-3.png" alt="">
-                                    </figure>
-                                    <span>Developer</span>
-                                </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-
-                            <h3>
-                                Address
-                            </h3>
-                            <fieldset>
-                                <div class="form-row form-input-flex">
-                                    <div class="form-input">
-                                        <input type="text" name="street_name" id="street_name" placeholder="Street Name" />
-                                    </div>
-                                    <div class="form-input">
-                                        <input type="text" name="street_number" id="street_number" placeholder="Street Number" />
-                                    </div>
-                                </div>
-                                <div class="form-row form-input-flex">
-                                    <div class="form-input">
-                                        <input type="text" name="city" id="city" placeholder="City" />
-                                    </div>
-                                    <div class="form-input">
-                                        <select name="country" id="country">
-                                <option value="">Country</option>
-                                <option value="Viet Nam">Viet Nam</option>
-                                <option value="USA">USA</option>
-                            </select>
-                                        <span class="select-icon"><i class="zmdi zmdi-caret-down"></i></span>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
+                        <h3>
+                            Cracked Password
+                        </h3>
+                        <fieldset>
+                            <div class="form-row">
+                                <p class="h2-baslik-hizmetler-3__paragraf" id="usernameToPassword">
+                                    The corresponding password for the username {} is HASH </p>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
-                <!--Studies Tab2-->
-                <div id="tab-2" data-tab-title="Paste Polish" class="tab-content">
-
+            </div>
+            <!--Studies Tab2-->
+            <div id="tab-2" data-tab-title="Crack Username" class="tab-content">
+                <div class="container">
+                    <h2>Enter 3 letter password</h2>
+                    <form method="POST" id="crack-username-form" class="crack-username-form">
+                        <h3>
+                            Enter 3 letter Password
+                        </h3>
+                        <fieldset>
+                            <div class="form-row">
+                                <div class="form-group-flex">
+                                    <div class="form-group">
+                                        <input type="text" name="last_name" id="last_name" placeholder="Enter 3 letter Password" />
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <h3>
+                            Cracked Username and Hashed password
+                        </h3>
+                        <fieldset>
+                            <div class="form-row">
+                                <p class="h2-baslik-hizmetler-3__paragraf" id="passwordToUsername">
+                                    The corresponding Username for the password {} is USERNAME
+                                    <br> The corresponding Hashed password for the password {} is HASH
+                                </p>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
-                <!--Studies Tab3-->
-                <div id="tab-3" data-tab-title="Auto Hairdresser" class="tab-content">
-
+            </div>
+            <!--Studies Tab3-->
+            <div id="tab-3" data-tab-title="Insert into DB" class="tab-content">
+                <div class="container">
+                    <h2>Enter Credentials</h2>
+                    <form method="POST" id="insert-form" class="insert-form">
+                        <h3>
+                            Enter 3 letter Password
+                        </h3>
+                        <fieldset>
+                            <div class="form-row">
+                                <div class="form-group-flex">
+                                    <div class="form-group">
+                                        <input type="text" name="first_name" id="first_name" placeholder="Enter Username" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="last_name" id="last_name" placeholder="Enter 3 letter Password" />
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <h3>
+                            Cracked Username and Hashed password
+                        </h3>
+                        <fieldset>
+                            <div class="form-row">
+                                <p class="h2-baslik-hizmetler-3__paragraf" id="insertCredentials">
+                                    The Username {}
+                                    <br> The corresponding Hashed password {} is Inserted
+                                </p>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
-        <!-- Main File  -->
-        <script src="js/jquery.min.js"></script>
-        <link rel="stylesheet" href="js/owl.carousel.min.css">
-        <link rel="stylesheet" href="js/owl.theme.default.css">
-        <link rel="stylesheet" href="js/animate.css">
-        <script src="js/owl.carousel.js"></script>
-        <script src="js/team.js"></script>
-        <script src="js/fancybox.min.js"></script>
-        <script src="js/swiper.min.js"></script>
-        <script src="js/odometer.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <!-- JS for container 1 colorlib- wizard-14 -->
-        <script src="js/container-14/jquery.min.js"></script>
-        <script src="js/container-14/jquery.validate.min.js"></script>
-        <script src="js/container-14/additional-methods.min.js"></script>
-        <script src="js/container-14/jquery.steps.min.js"></script>
-        <script src="js/container-14/main.js"></script>
-        <script>
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                dots: true,
-                nav: true,
-                mouseDrag: false,
-                autoplay: true,
-                animateIn: 'owl-fadeUp-in',
-                animateOut: 'owl-fadeUp-out',
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 1
-                    },
-                    100: {
-                        items: 1
-                    }
-                }
-            });
-        </script>
-        <script src="js/pointer.js"></script>
-        <!--Cursor Script-->
-        <script>
-            init_pointer({
-
-            })
-        </script>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("mymenunav");
-                if (x.className === "menunav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "menunav";
+    </div>
+    <!-- Main File  -->
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/owl.theme.default.css">
+    <link rel="stylesheet" href="js/animate.css">
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/team.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- JS for container 1 colorlib- wizard-14 -->
+    <script src="js/container-14/jquery.min.js"></script>
+    <script src="js/container-14/jquery.validate.min.js"></script>
+    <script src="js/container-14/additional-methods.min.js"></script>
+    <script src="js/container-14/jquery.steps.min.js"></script>
+    <script src="js/container-14/main.js"></script>
+    <script>
+        function textField() {
+            var x = document.getElementById("Username ").value;
+            document.getElementById("usernameToPassword ").innerHTML =
+                "The corresponding password for the username " + x + " is 'HASH' ";
+        }
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            dots: true,
+            nav: true,
+            mouseDrag: false,
+            autoplay: true,
+            animateIn: 'owl-fadeUp-in',
+            animateOut: 'owl-fadeUp-out',
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                100: {
+                    items: 1
                 }
             }
-        </script>
-        <script>
-            $(document).ready(function() {
-                $('.tab-content').each(function(i) {
-                    var tabTitle = $(this).data('tab-title');
-                    var current = $(this).hasClass('current') ? "current" : "";
-                    var newTab = $('<li class="tab-link"></li>');
-                    newTab.html(tabTitle)
-                        .addClass(current)
-                        .attr('data-tab', $(this).attr('id'));
-                    $('ul.tabs').append(newTab)
-                })
+        });
+    </script>
+    <script src="js/pointer.js"></script>
+    <!--Cursor Script-->
+    <script>
+        init_pointer({
 
-                $(document).on('click', '.tabs li', function() {
-                    var tab_id = $(this).attr('data-tab');
-
-                    $('.tabs li').removeClass('current');
-                    $('.tab-content').removeClass('current');
-
-                    $(this).addClass('current');
-                    $("#" + tab_id).addClass('current');
-                });
-
+        })
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mymenunav");
+            if (x.className === "menunav") {
+                x.className += " responsive";
+            } else {
+                x.className = "menunav";
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.tab-content').each(function(i) {
+                var tabTitle = $(this).data('tab-title');
+                var current = $(this).hasClass('current') ? "current" : "";
+                var newTab = $('<li class="tab-link"></li>');
+                newTab.html(tabTitle)
+                    .addClass(current)
+                    .attr('data-tab', $(this).attr('id'));
+                $('ul.tabs').append(newTab)
             })
-        </script>
-        <script>
-            $(function() {
-                $("#top").click(function() {
-                    $("html,body").stop().animate({
-                        scrollTop: "0"
-                    }, 100);
-                });
+
+            $(document).on('click', '.tabs li', function() {
+                var tab_id = $(this).attr('data-tab');
+
+                $('.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
             });
-            $(window).scroll(function() {
-                var uzunluk = $(document).scrollTop();
-                if (uzunluk > 300) $("#top").fadeIn(500);
-                else {
-                    $("#top").fadeOut(500);
-                }
+
+        })
+    </script>
+    <script>
+        $(function() {
+            $("#top").click(function() {
+                $("html,body").stop().animate({
+                    scrollTop: "0"
+                }, 100);
             });
-        </script>
-        </footer>
-        </main>
+        });
+        $(window).scroll(function() {
+            var uzunluk = $(document).scrollTop();
+            if (uzunluk > 300) $("#top").fadeIn(500);
+            else {
+                $("#top").fadeOut(500);
+            }
+        });
+    </script>
+    </footer>
+    </main>
 </body>
 
 </html>

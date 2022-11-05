@@ -193,7 +193,7 @@ a:active {
 input,
 select,
 textarea {
-    outline: none;
+    outline: #2d53da;
     appearance: unset !important;
     -moz-appearance: unset !important;
     -webkit-appearance: unset !important;
@@ -214,7 +214,7 @@ input::-webkit-inner-spin-button {
 input:focus,
 select:focus,
 textarea:focus {
-    outline: none;
+    outline: #2d53da;
     box-shadow: none !important;
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
@@ -244,9 +244,7 @@ input[type="radio"] {
 
 h2 {
     font-size: 24px;
-    color: #222;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: #2d53da;
     text-align: center;
     margin: 0px;
     padding-top: 30px;
@@ -276,10 +274,9 @@ body {
 .container {
     width: 990px;
     position: relative;
-    margin: 0 auto;
+    margin: 30px auto;
     background: #fff;
-    box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 9.5px 0.5px h2px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.15);
     -o-box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.15);
     -ms-box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.15);
@@ -290,7 +287,7 @@ body {
     -ms-border-radius: 10px;
 }
 
-.signup-form {
+.crack-password-form {
     padding: 30px 0px 52px 0px;
     position: relative;
 }
@@ -301,7 +298,7 @@ select {
     background: transparent;
     border: none;
     font-size: 14px;
-    padding: 15px 25px;
+    padding: 15px 10px;
     border: 1px solid #ebebeb;
     font-family: "Poppins";
     border-radius: 5px;
@@ -313,7 +310,7 @@ select {
 
 input:focus,
 select:focus {
-    border: 1px solid #1ed760;
+    border: 1px solid #2d53da;
 }
 
 input::-webkit-input-placeholder,
@@ -461,7 +458,7 @@ fieldset.current {
 }
 
 .form-radio input:checked+label figure {
-    border: 2px solid #1ed760;
+    border: 2px solid #2d53da;
 }
 
 .form-radio input:checked+label figure img {
@@ -470,7 +467,7 @@ fieldset.current {
 }
 
 .form-radio input:checked+label span {
-    color: #1ed760;
+    color: #2d53da;
 }
 
 .form-radio input:focus+label {
@@ -478,8 +475,8 @@ fieldset.current {
 }
 
 .form-radio input:hover {
-    background-color: #1ed760;
-    border-color: #1ed760;
+    background-color: #2d53da;
+    border-color: #2d53da;
 }
 
 .form-flex {
@@ -494,7 +491,8 @@ fieldset.current {
 .content {
     padding-right: 100px;
     padding-left: 81px;
-    height: 335px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .content h3 {
@@ -522,7 +520,7 @@ fieldset.current {
 }
 
 .steps ul li:hover a {
-    background: #1ed760;
+    background: #2d53da;
 }
 
 .steps ul li:hover a h3 {
@@ -530,7 +528,7 @@ fieldset.current {
 }
 
 .steps ul .current a {
-    background: #1ed760;
+    background: #2d53da;
 }
 
 .steps ul .current a h3 {
@@ -570,7 +568,7 @@ fieldset.current {
     width: 140px;
     height: 50px;
     color: #fff;
-    background: #1ed760;
+    background: #2d53da;
     align-items: center;
     -moz-align-items: center;
     -webkit-align-items: center;
@@ -706,7 +704,8 @@ label.error {
         width: 100%;
     }
     .content {
-        height: 550px;
+        display: flex;
+        flex-wrap: wrap;
         padding-right: 30px;
         padding-left: 30px;
     }
@@ -723,11 +722,12 @@ label.error {
 }
 
 @media screen and (max-width: 480px) {
-    .signup-form {
+    .crack-password-form {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .crack-username-form {
         padding-left: 30px;
         padding-right: 30px;
     }
 }
-
-
-/*# sourceMappingURL=style.css.map */

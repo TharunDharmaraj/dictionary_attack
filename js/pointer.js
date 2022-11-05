@@ -1,8 +1,3 @@
-/* 
-    pointer.js was created by OwL for use on websites, 
-     and can be found at https://www.garantiwebtasarim.com
-*/
-
 const pointer = document.createElement("div")
 pointer.id = "pointer-dot"
 const ring = document.createElement("div")
@@ -38,9 +33,9 @@ const init_pointer = (options) => {
 
     const getOption = (option) => {
         let defaultObj = {
-            pointerColor: "#f1f1f1",
-            ringSize: 25,
-            ringClickSize: (options["ringSize"] || 15) - 5,
+            pointerColor: "#e5e5e5",
+            ringSize: 16,
+            ringClickSize: (options["ringSize"] || 10) - 5,
         }
         if (options[option] == undefined) {
             return defaultObj[option]
