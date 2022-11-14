@@ -571,7 +571,7 @@ fieldset.current {
 
 .actions ul li:nth-child(2),
 .actions ul li:last-child {
-    float: right;
+    float: left;
 }
 
 .actions ul li a {
