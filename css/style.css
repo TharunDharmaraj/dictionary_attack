@@ -7099,7 +7099,7 @@ header:hover .owl-next {
 .butonAdded {
     display: inline-block;
     margin-bottom: 10px;
-    background: #339dff;
+    background: #2d53da;
     color: #fff;
     text-decoration: none;
     font-size: 13px;
@@ -7115,6 +7115,6 @@ header:hover .owl-next {
 
 .butonAdded:hover {
     background: #fff;
-    color: #339dff;
+    color: #2d53da;
     box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
 }

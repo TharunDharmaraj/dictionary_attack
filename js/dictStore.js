@@ -1,6 +1,8 @@
 var dict = []
 
 function dictStoreFunc() {
+    generatePSW();
+    generate();
     var username = document.getElementById("first_name2").value;
     var password = document.getElementById("last_name2").value;
     var hashedPass = generateHash(password);
