@@ -2,6 +2,21 @@
     text-align: center;
 }
 
+.butonAdded {
+    display: inline-block;
+    margin-right: 10px;
+    background: #339dff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 38px;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 170px;
+    text-align: center;
+}
+
 @media only screen and (max-width: 40em) {
     .h-yazi-ortalama {
         text-align: center;
@@ -7081,5 +7096,25 @@ header:hover .owl-next {
     }
 }
 
+.butonAdded {
+    display: inline-block;
+    margin-bottom: 10px;
+    background: #339dff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 38px;
+    border: none;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 170px;
+    text-align: center;
+    float: right;
+}
 
-/*# sourceMappingURL=style.css.map */
+.butonAdded:hover {
+    background: #fff;
+    color: #339dff;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+}

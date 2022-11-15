@@ -185,7 +185,7 @@
             return form3.valid();
         },
         onFinished: function(event, currentIndex) {
-            alert('Sumited');
+            alert('Submited');
         },
         onStepChanged: function(event, currentIndex, priorIndex) {
 

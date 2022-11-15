@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" style="background-image: url('images/wizard-v1.jpg');">
+<html lang="en" style="background-image: url('images/wizard-v1.jpg') ;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
     <!-- COntainer-14 -->
     <link rel="stylesheet" href="css/container-14/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
@@ -35,7 +41,6 @@
             <ul class="tabs"></ul>
             <!--Studies Tab1-->
             <div id="tab-1" data-tab-title="Crack Password" class="tab-content current">
-                <!-- Colorlib - wizard - 14 -->
                 <div class="container">
                     <h2>Enter Username</h2>
                     <form method="POST" id="crack-password-form" class="crack-password-form">
@@ -46,11 +51,12 @@
                             <div class="form-row">
                                 <div class="form-group-flex">
                                     <div class="form-group">
-                                        <input type="text" name="first_name" id="first_name" maxlength="12" placeholder="Enter UserName" />
+                                        <input type="text" name="first_name" id="first_name1" maxlength="12" placeholder="Enter UserName" />
                                     </div>
                                 </div>
-                            </div>
+                                <button type="button" class="butonAdded" onclick="crackPasswordFunc()">Compute</button>
 
+                            </div>
                         </fieldset>
 
                         <h3>
@@ -58,9 +64,11 @@
                         </h3>
                         <fieldset>
                             <div class="form-row">
-                                <p class="h2-baslik-hizmetler-3__paragraf" id="usernameToPassword">
-                                    The corresponding password for the username {} is HASH </p>
+                                <p class="h2-baslik-hizmetler-3__paragraf" id="usernameToPassword1">
+                                    Please press compute button
+                                </p>
                             </div>
+
                         </fieldset>
                     </form>
                 </div>
@@ -77,9 +85,11 @@
                             <div class="form-row">
                                 <div class="form-group-flex">
                                     <div class="form-group">
-                                        <input type="text" name="last_name" id="last_name" placeholder="Enter 3 letter Password" maxlength="3" required/>
+                                        <input type="text" name="last_name" id="last_name1" placeholder="Enter 3 letter Password" maxlength="3" required/>
                                     </div>
                                 </div>
+                                <button type="button" class="butonAdded" onclick="CrackUsername()">Compute</button>
+
                             </div>
                         </fieldset>
                         <h3>
@@ -88,8 +98,8 @@
                         <fieldset>
                             <div class="form-row">
                                 <p class="h2-baslik-hizmetler-3__paragraf" id="passwordToUsername">
-                                    The corresponding Username for the password {} is USERNAME
-                                    <br> The corresponding Hashed password for the password {} is HASH
+
+                                    <br>Press compute button
                                 </p>
                             </div>
                         </fieldset>
@@ -108,11 +118,12 @@
                             <div class="form-row">
                                 <div class="form-group-flex">
                                     <div class="form-group">
-                                        <input type="text" name="first_name" id="first_name" maxlength="12" placeholder="Enter Username" />
+                                        <input type="text" name="first_name" id="first_name2" maxlength="12" placeholder="Enter Username" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="last_name" id="last_name" maxlength="3" placeholder="Enter 3 letter Password" />
+                                        <input type="text" name="last_name" id="last_name2" maxlength="3" placeholder="Enter 3 letter Password" />
                                     </div>
+                                    <button type="button" class="butonAdded" onclick="dictStoreFunc()">Compute</button><br>
                                 </div>
                             </div>
                         </fieldset>
@@ -122,14 +133,15 @@
                         <fieldset>
                             <div class="form-row">
                                 <p class="h2-baslik-hizmetler-3__paragraf" id="insertCredentials">
-                                    The Username {}
-                                    <br> The corresponding Hashed password {} is Inserted
+                                    Please press compute button
                                 </p>
                             </div>
                         </fieldset>
                     </form>
                 </div>
             </div>
+            <p style="font-style:italic;font-size:12px;font-weight:lighter;color:rgb(88, 87, 87);float:right;padding:10px">Credits: Rahul prassanna T S , Yashwanth S G </p>
+
         </div>
     </div>
     <!-- Main File  -->
@@ -139,9 +151,12 @@
     <link rel="stylesheet" href="js/animate.css">
     <script src="js/owl.carousel.js"></script>
     <script src="js/team.js"></script>
-    <script src="js/fancybox.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/odometer.min.js"></script>
+    <script src="js/dictStore.js"></script>
+    <script src="js/crackedPassword.js"></script>
+    <script src="js/crackedUsername.js"></script>
+    <script src="js/generateHash.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- JS for container 1 colorlib- wizard-14 -->
@@ -150,37 +165,8 @@
     <script src="js/container-14/additional-methods.min.js"></script>
     <script src="js/container-14/jquery.steps.min.js"></script>
     <script src="js/container-14/main.js"></script>
-    <script>
-        function textField() {
-            var x = document.getElementById("Username ").value;
-            document.getElementById("usernameToPassword ").innerHTML =
-                "The corresponding password for the username " + x + " is 'HASH' ";
-        }
-    </script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 30,
-            padding: 30,
-            dots: true,
-            nav: true,
-            mouseDrag: false,
-            autoplay: true,
-            animateIn: 'owl-fadeUp-in',
-            animateOut: 'owl-fadeUp-out',
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                100: {
-                    items: 1
-                }
-            }
-        });
-    </script>
+
+
     <script src="js/pointer.js"></script>
     <!--Cursor Script-->
     <script>
